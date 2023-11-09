@@ -1,0 +1,136 @@
+:root {
+    --main-color: #116062;
+    --background-color: #ccccff;
+    --white: #fff;
+    --black: #000;
+    --black-pink: #2f112d;
+    --matte-white: #f2f3f4;
+  }
+  html,
+  body {
+    height: 100%;
+    background-color: var(--white);
+    font-family: "Poppins", sans-serif;
+  }
+  h1 {
+    text-align: center;
+  }
+  ul{
+    padding: 0;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 700px;
+    background-color: var(--matte-white);
+    margin: 0 auto;
+    border-radius: 30px;
+    padding: 50px 30px;
+    border: 2px solid var(--main-color);
+    transition: 500ms;
+  }
+  .input_block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .input {
+    padding: 8px 10px;
+    margin: 0 30px 0 0;
+    border-radius: 20px;
+    border: 2px solid var(--matte-white);
+    transition: 500ms;
+    box-shadow: none;
+  }
+  .input:focus {
+    border: 2px solid var(--main-color);
+    outline: none;
+  }
+  .input:hover {
+    border: 2px solid var(--main-color);
+    box-shadow: 0px 0px 2px 2px #cbcbcb;
+  }
+  .wrapper_button {
+    margin: auto;
+  }
+  .add_button {
+    background-color: var(--white);
+    padding: 7px;
+    border: 2px solid var(--main-color);
+    border-radius: 20px;
+    transition: 500ms;
+  }
+  .add_button:hover {
+    box-shadow: 0px 0px 2px 2px #cbcbcb;
+    transition: 100ms;
+  }
+  .add_button:active {
+    box-shadow: none;
+  }
+  .add_button:disabled {
+    color: gray;
+    border: 2px solid gray;
+    pointer-events: none;
+  }
+  .title {
+    margin: 20px 0 10px;
+  }
+  .todos_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .item {
+    display: flex;
+    padding: 15px;
+    margin: 10px 0 0;
+    background-color: var(--white);
+    border-radius: 20px;
+    max-width: 550px;
+    width: 100%;
+    order: 0;
+  }
+  .description {
+    display: block;
+    max-width: 290px;
+    word-wrap: normal;
+    margin: auto 0;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin: auto 0 auto auto;
+  }
+  .btn_complete {
+    margin: auto 15px auto 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 0;
+    appearance: none;
+    background-color: lightgray;
+  }
+  .btn_complete:checked {
+    background: var(--main-color);
+  }
+  .btn_delete {
+    background-color: var(--white);
+    padding: 6px;
+    border: 2px solid var(--black-pink);
+    border-radius: 20px;
+    transition: 500ms;
+  }
+  .btn_delete:hover {
+    box-shadow: 0px 0px 2px 2px #cbcbcb;
+    transition: 100ms;
+  }
+  .btn_delete:active {
+    box-shadow: none;
+  }
+  .hideTitle {
+    display: none;
+  }

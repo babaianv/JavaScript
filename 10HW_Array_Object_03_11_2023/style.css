@@ -1,0 +1,78 @@
+
+
+.header {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .customer_info{
+    color:rgb(164, 8, 8) ;
+    
+  }
+
+  .main2{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    color: rgb(126, 15, 82);
+    
+  }
+  
+ 
+  button {
+    background-color: #008CBA;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 150px;
+    height: 35px;
+    
+  }
+  
+  button:hover {
+    background-color: #005F7A;
+  }
+  
+  input[type="number"] {
+    padding: 5px;
+    width: 200px;
+    margin-top: 5px;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+ 
+  #balance {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    justify-content: flex-end;
+  }
+
+  .checkBtn{
+    display: block;
+    margin-top: 10px;
+    background-color: green;
+    cursor: pointer;
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  .checkBtn:hover{
+    background-color: darkgreen;
+}
+  
+  .rest{
+    text-align: center;
+  }
+
+  body {
+    background-color: aliceblue;
+  }
+
+  

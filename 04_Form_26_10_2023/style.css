@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f2f2f2;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-top: 5px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: justify;
+}
+
+p a {
+  font-size: 14px;
+  text-decoration: none;
+  font-style: italic;
+}
+
+input[type="text"],
+[type="email"],
+[type="tel"],
+[type="password"] {
+  width: 100%;
+  max-width: 378px;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 10px 5px;
+  color: #fff;
+  border-radius: 15px;
+  transition: all 0.5s;
+  max-width: 85px;
+  width: 85px;
+}
+
+button[type="submit"] {
+  background-color: #298330;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button[type="reset"] {
+  background-color: #b4382f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.button-container button[type="submit"]:active {
+  color: #19441c;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.button-container button[type="reset"]:active {
+  color: #802b25;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.checkbox-container {
+  display: flex;
+}
+
+select#hobby {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>HW</title>
+    
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="main">Welcome to Bank</h1>
+      <h2 class="main2">"Santander"</h2>
+
+      <div class="customer_info">
+        <p id="accountHolderName"><b>Account Holder Name:</b> Alice</p>
+        <p id="account_number"><b>Account Number:</b> 12345678</p>
+        <p id="balance"><b>Balance:</b> 1000</p>
+      </div>
+    </header>
+
+
+    <section class="rest">
+      <label for="depositAmount">Deposit amount:</label>
+      <input
+        type="number"
+        placeholder="Enter your deposit amount"
+        id="depositAmount"
+      />
+      <button id="depositButton">Save</button>
+
+      <label for="withdrawAmount">Amount to withdraw:</label>
+      <input
+        type="number"
+        placeholder="Enter amount to withdraw:"
+        id="withdrawAmount"
+      />
+      <button id="withdrawButton">Withdraw funds</button>
+
+      <button class="checkBtn" id="checkBalanceButton">Check my balance</button>
+    </section>
+
+
+  </body>
+</html>

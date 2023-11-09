@@ -1,0 +1,98 @@
+h1 {
+  text-align: center;
+  font-family: "Brush Script MT", "Brush Script Std", cursive;
+  font-size: 90px;
+  color: rgb(166, 17, 17);
+  margin: 20px 0;
+  font-weight: 600;
+}
+p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+.wrapper {
+  margin: 0 300px;
+  padding: 20px;
+  background-color: rgb(227, 228, 218);
+}
+
+.center-image {
+  display: block;
+  margin: 0 auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 7px;
+  padding: 10px;
+  font-weight: 200;
+  text-decoration: underline;
+}
+
+h2 {
+  text-align: center;
+  font-family: Bradley Hand, cursive;
+  font-size: 30px;
+  color: brown;
+}
+
+ol {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  padding: 10px;
+  margin: 0 20px;
+}
+
+img {
+  width: 300px;
+  margin-bottom: 10px;
+}
+li {
+  margin: 0 0 10px 0;
+}
+
+a {
+  font-size: 25px;
+  text-decoration: none;
+  margin: 10px 0 10px 0;
+}
+
+.shr-parag {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 200;
+}
+
+#bye {
+  font-size: 24px;
+  color: rgb(167, 13, 13);
+  text-align: center;
+}
+
+.navigator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #7e6ccd;
+  color: #fff;
+  padding: 10px;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.navigator a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.navigator a:hover {
+  text-decoration: underline;
+}

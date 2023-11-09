@@ -1,0 +1,82 @@
+body {
+  background-color: rgb(229, 225, 233);
+}
+
+.title-main {
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-style: italic;
+  color: rgb(114, 60, 165);
+  font-size: 50px;
+  margin-top: 50px;
+}
+
+.container {
+  text-align: center;
+  padding: 50px;
+  margin: 0 auto;
+  max-width: 900px;
+  background-color: rgb(190, 171, 185);
+  border: 2px solid black;
+  border-radius: 30px;
+}
+.panel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 0 50px 0;
+}
+
+.input {
+  padding: 8px 10px;
+  margin: 0 30px 0 0;
+  border-radius: 20px;
+  border: 2px solid black;
+  box-shadow: none;
+  max-width: 350px;
+  width: 100%;
+}
+
+.input:focus {
+  border: 2px solid #020202;
+  outline: none;
+}
+
+.input:hover {
+  box-shadow: 0px 0px 2px 2px #8e1582;
+}
+
+.button {
+  background-color: rgb(176, 50, 142);
+  color: aliceblue;
+  border-radius: 15px;
+  border: none;
+  font-size: 17px;;
+}
+
+.button:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 2px 2px #8e1582;
+}
+
+.title {
+  font-family: "Edu TAS Beginner", cursive;
+  color: rgb(114, 60, 165);
+  font-size: 35px;
+}
+
+.task_List {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  
+  font-size: 20px;
+  color: #45033e;
+}
+
+.text_modify {
+  text-decoration: line-through;
+}
+
+
+

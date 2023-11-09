@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <h1>Signup Form</h1>
+
+    <form action="/registration">
+      <label for="name">Name:</label>
+      <input type="text" placeholder="Enter your name" id="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" placeholder="Enter your email" id="email" required />
+
+      <label for="phone">Phone:</label>
+      <input
+        type="tel"
+        pattern="[+]{1}[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        placeholder="Example: +123-456-7890"
+        id="phone"
+        required
+      />
+
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        placeholder="Enter your password"
+        minlength="8"
+        required
+      />
+
+      <label for="hobby">Hobby:</label>
+      <select id="hobby" required>
+        <option value="">-Enter your hobby-</option>
+        <option value="chess">Chess</option>
+        <option value="football">Soccer</option>
+        <option value="painting">Painting</option>
+        <option value="hiking">Hiking</option>
+        <option value="cooking">Cooking</option>
+        <option value="gardening">Gardening</option>
+        <option value="dancing">Dancing</option>
+        <option value="collecting">Collecting</option>
+        <option value="collecting">Collecting</option>
+        <option value="winter-sport">Winter sport</option>
+        <option value="no">-Not exist in the list-</option>
+      </select>
+      <p>
+        <a href="https://en.wikipedia.org/wiki/Privacy_policy" target="_blank"
+          >Read privacy policy</a
+        >
+      </p>
+
+      <div class="checkbox-container">
+        <input type="checkbox" id="agree" required />
+        <label for="agree"
+          >I have read and understand the privacy policy and information about
+          cookies.</label
+        >
+      </div>
+
+      <div class="button-container">
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
