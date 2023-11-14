@@ -17,6 +17,7 @@ button.addEventListener ('click', async () => {
             .then(weather => displayWeather(weather))
 
             info.style.display = 'block';
+            errorMessage.innerHTML = '';
         }catch(error){
             info.style.display = 'none';
             errorMessage.style.color = 'red';
@@ -26,6 +27,7 @@ button.addEventListener ('click', async () => {
         
     }
         input.value = '';
+        
 });
 
 
