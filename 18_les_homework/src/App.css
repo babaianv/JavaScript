@@ -1,0 +1,40 @@
+/* App.css */
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #343a40;
+    color: white;
+  }
+  
+  .container {
+    background-color: #212529;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .list-group-item {
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .list-group-item:hover {
+    background-color: #495057;
+  }
+  
+  #userData {
+    margin-top: 20px;
+    color: #0a0a0a;
+    background-color: #afa6a6;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  #userData h2 {
+    text-align: center;
+  }
+  
