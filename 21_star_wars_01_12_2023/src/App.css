@@ -1,0 +1,89 @@
+
+header {
+  background-color: rgba(60, 69, 67, 0.6);
+  border-radius: 15px 15px 0 0;
+  padding-bottom: 20px;
+}
+
+footer {
+  background-color: rgba(60, 69, 67, 0.6);
+  /*
+  em - от значения свойства font-size элемента
+  rem - от значения свойства font-size <html> (16px)
+  */
+  height: 6em;
+  clear: both;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  white-space: nowrap;
+  top: 5px;
+  width: 100%;
+  font-size: 200%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+li {
+ 
+  margin: 0 10px; 
+}
+
+li,
+h1 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.2em;
+  padding: 50px  0.55em 0;
+  
+  
+}
+
+.left {
+  float: left;
+  width: 25%;
+  margin: 5px 10px 0 5px;
+}
+
+.right {
+  float: right;
+  width: 50%;
+  margin: 5px 5px 0;
+  border: 1px solid #eedb00;
+  border-radius: 0 0 15px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.right > h2 {
+  width: 100%;
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+.right > img {
+  width: 32%;
+}
+
+.bottomLeft {
+  border-bottom-left-radius: 15px;
+}
+
+.bottomRight {
+  border-bottom-right-radius: 15px;
+}
