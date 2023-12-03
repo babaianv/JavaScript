@@ -1,0 +1,7 @@
+.posters{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 950px;
+    margin: 20px auto;
+    gap: 20px;
+}

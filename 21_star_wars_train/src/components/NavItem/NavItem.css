@@ -1,0 +1,10 @@
+.navItem{
+    color: #eedb00;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.navItem:hover{
+    color: #ba6c0e;
+    transition: linear 0.3s;
+}

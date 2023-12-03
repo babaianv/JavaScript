@@ -1,0 +1,15 @@
+.footer{
+    display: flex;
+    padding: 40px 20px 40px 20px;
+    background-color: rgba(60, 69, 67, 0.6);
+    flex-direction: column;
+    clear: both;
+   
+}
+
+.logo{
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+
