@@ -1,5 +1,6 @@
 import React, { ChangeEvent, FormEvent, useState } from 'react'
 import { useDispatch } from 'react-redux';
+import { editTitle } from '../../redux/book/bookSlice';
 
 const EditForm: React.FC<{isbn: string}> = ({isbn}): JSX.Element => {
     const [title, setTitle] = useState<string>('');
@@ -7,7 +8,7 @@ const EditForm: React.FC<{isbn: string}> = ({isbn}): JSX.Element => {
 
     const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        dispatch({ type: 'books/editTitle', payload: { isbn, title } });
+        dispatch(editTitle({isbn: isbn, title:title}));
         setTitle('');
     }
     return (

@@ -1,5 +1,7 @@
 import React, { ChangeEvent, FormEvent, useState } from 'react'
 import { useDispatch } from 'react-redux';
+import { addBook } from '../../redux/book/bookSlice';
+import { uid } from 'uid';
 
 const CreateBook: React.FC = (): JSX.Element => {
 
@@ -11,7 +13,15 @@ const CreateBook: React.FC = (): JSX.Element => {
 
     const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        dispatch({ type: 'books/add', payload: { title, author, year }});
+        const newBook = {
+            isbn: uid(),
+            title: title,
+            author: author,
+            year: year,
+        };
+    
+        dispatch(addBook(newBook));
+
         setTitle('');
         setAuthor('');
         setYear('');
