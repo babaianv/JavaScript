@@ -5,3 +5,16 @@
     margin: 20px auto;
     gap: 20px;
 }
+
+.linkToEpisode{
+    color: #eedb00;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.linkToEpisode:hover{
+    color:#ba6c0e ;
+    transition: linear 0.3s;
+}
+

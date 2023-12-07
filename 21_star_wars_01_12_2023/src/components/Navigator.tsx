@@ -1,13 +1,19 @@
 import React from 'react'
+import NavItem from './NavItem/NavItem'
+import { navItems } from '../utils'
 
-const Navigator = () => {
+
+
+
+const Navigator : React.FC<{changePage: (title: string) => void}> = ({changePage}) => {
   return (
     <nav>
     <ul>
-      <li className="commonButton">Home</li>
-      <li className="commonButton">About Me</li>
-      <li className="commonButton">Star Wars</li>
-      <li className="commonButton">Contact</li>
+      {navItems.map((navItems, index) => (
+        <NavItem key={index} itemTitle={navItems} changePage={changePage} />
+      ))}
+
+    
     </ul>
   </nav>
   )

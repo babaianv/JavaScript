@@ -1,10 +1,26 @@
 .containerAboutMe {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     margin: 20px auto ;
     max-width: 900px;
+}
+.contentWrapper {
+    align-items: stretch;
 }
 
 .title{
     display: flex;
     justify-content: center;
     margin: 35px 0 50px 0;
+
+}
+
+.img_skywalker {
+    width: 300px;
+    margin-right: 10px;
+    max-width: 100%;
+    height: auto;
+    float: left;
+    height: 100%;
 }

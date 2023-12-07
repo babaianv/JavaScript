@@ -34,8 +34,12 @@ ul {
 }
 
 li {
- 
   margin: 0 10px; 
+}
+
+a {
+color: #eedb00;
+text-decoration: none;
 }
 
 li,

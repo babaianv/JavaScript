@@ -26,7 +26,7 @@ const App: React.FC = () => {
         setUsers(data);
         setFilteredUsers(data);
       } catch (err: any) {
-        setError(err.message || 'Произошла ошибка');
+        setError(err.message || 'Data Error');
       }
     };
 
@@ -46,7 +46,7 @@ const App: React.FC = () => {
 
   return (
     <div className="container w-50 pt-5">
-      <h1>Список пользователей</h1>
+      <h1>User List</h1>
     
         <>
           <UserList users={filteredUsers} onUserClick={handleUserClick} />

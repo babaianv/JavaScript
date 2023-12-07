@@ -25,6 +25,7 @@ export const friends = [
     friend8,
     friend9
 ];
+
 export const posts = [
     post1,
     post2,
@@ -33,3 +34,23 @@ export const posts = [
     post5,
     post6,
 ];
+
+export const titles = [
+    "Star Wars: Revenge of the Sith (Episode III)",
+    "Star Wars: Attack of the Clones (Episode II)",
+    "Star Wars: The Phantom Menace (Episode I)",
+    "Star Wars: Return of the Jedi (Episode VI)",
+    "Star Wars: The Empire Strikes Back (Episode V)",
+    "Star Wars: A New Hope (Episode IV)",
+  ];
+
+  export const links =[
+
+    'https://www.starwars.com/films/star-wars-episode-iii-revenge-of-the-sith',
+    'https://www.starwars.com/films/star-wars-episode-ii-attack-of-the-clones',
+    'https://www.starwars.com/films/star-wars-episode-i-the-phantom-menace',
+    'https://www.starwars.com/films/star-wars-episode-vi-return-of-the-jedi',
+    'https://www.starwars.com/films/star-wars-episode-v-the-empire-strikes-back',
+    'https://www.starwars.com/films/star-wars-episode-iv-a-new-hope',
+  ];
+

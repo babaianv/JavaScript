@@ -1,47 +1,28 @@
-import React from "react";
-import {friends} from '../utils'
-import hero from '../Images/main.jpg'
-import Friend from "./Friend";
+import React, { useContext } from "react";
+import { navItems } from "../utils";
+import AboutMe from "../pages/AboutMe";
+import StarWars from "../pages/StarWars";
+import Contact from "../pages/Contact";
+import Home from "../pages/Home";
+import { FullPageContext } from "../App";
 
-const Main = () => {
-  return (
-    <main>
-      <section className="left">
-        <img src={hero} alt="hero" />
-      </section>
+const Main:React.FC<{currentPage: string}> = ({ currentPage }) => {
 
-      <section className="right">
-        <h2>Dream Team</h2>
-        {friends.map((item, index) => (
-            <Friend key={index} photo={item} i={index}/>
-        ))}
+//  const page = useContext(PageContext);
+ const {page} = useContext(FullPageContext);
 
-      </section>
-      <p className="farGalaxy">
-        Давным-давно в далекой Галактике... Старая Республика пала. На ее руинах
-        Орден ситов создал галактическую Империю, подчиняющую одну за другой
-        планетные системы. Силы Альянса стремятся свергнуть Темного Императора и
-        восстановить свободное правление в Галактике. Генерал Оби-Ван Кеноби
-        возвращается после многолетнего уединения, чтобы снова сойтись в
-        поединке с Повелителем Тьмы Дартом Вейдером. Вместе с ним на светлой
-        стороне Силы – юный пилот Люк, сын Анакина Скайуокера, принцесса-сенатор
-        Лейя Органа, легендарный коррелианский контрабандист Хан Соло и его друг
-        вуки Чубакка.
-      </p>
-    </main>
-  );
+  switch (page) {
+    case navItems[1]:
+      return <AboutMe/>
+    case navItems[2]:
+      return <StarWars/>
+      case navItems[3]:
+      return <Contact/>
+    default:
+      return<Home/>
+      
+  }
 };
 
 export default Main;
 
-// import React, { Component } from 'react'
-
-// export class Main extends Component {
-//   render() {
-//     return (
-//       <div>Main</div>
-//     )
-//   }
-// }
-
-// export default Main

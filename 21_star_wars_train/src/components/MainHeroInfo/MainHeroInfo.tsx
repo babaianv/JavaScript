@@ -1,10 +1,14 @@
 import React from 'react'
 import './MainHeroInfo.css'
+import skywalker from'../../Images/SkyWalker.png'
 
 const MainHeroInfo = () => {
   return (
     <div className='containerAboutMe'>
+        
         <h1 className='title'>Luke Skywalker</h1>
+        <div className='contentWrapper'>
+        <img className='img_skywalker' src={skywalker} alt='skywalker'></img>
         <p className='info'>
         Hello there! I'm Luke Skywalker, a farm boy turned Jedi Knight, and I've
         had quite the journey in a galaxy far, far away. I hail from the desert
@@ -29,6 +33,7 @@ const MainHeroInfo = () => {
         resilience, and the enduring power of hope in the face of darkness. May
         the Force be with you!
         </p>
+        </div>
     </div>
   )
 }

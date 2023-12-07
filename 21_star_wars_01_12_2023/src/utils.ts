@@ -19,3 +19,5 @@ export const friends = [
     friend8,
     friend9
 ];
+
+export const navItems = ['Home', 'About me', 'Star Wars', 'Contact']
