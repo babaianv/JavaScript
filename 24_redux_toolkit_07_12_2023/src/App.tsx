@@ -1,18 +1,18 @@
-import React from 'react';
-import './App.css';
-import CounterRTK from './components/CounterRTK';
-// import Sandwich from './components/Sandwich';
+import React from "react";
+import "./App.css";
+import CounterRTK from "./components/counter/CounterRTK";
+import Sandwich from "./components/sandwich/Sandwich";
 // import CreateBook from './components/CreateBook';
 // import BooksPage from './components/BooksPage';
 
 function App() {
   return (
-  <>
-    <CounterRTK />
-    {/* <Sandwich/>
-    <CreateBook/>
+    <>
+      <CounterRTK />
+      <Sandwich />
+      {/* <CreateBook/>
     <BooksPage/> */}
-  </>
+    </>
   );
 }
 
