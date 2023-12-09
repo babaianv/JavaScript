@@ -7,7 +7,7 @@ import { deleteBook } from "../../redux/book/bookSlice";
 const BooksPage: React.FC = (): JSX.Element => {
   const books = useSelector((state: RootState) => state.library.books);
 
-    const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
   return (
     <div>
@@ -15,8 +15,12 @@ const BooksPage: React.FC = (): JSX.Element => {
       <ul>
         {books.map(({ author, isbn, title, year }) => (
           <li key={isbn}>
-            <p>{isbn}. "{title}" - author: {author}, {year}</p>
-            <button onClick={() => dispatch(deleteBook(isbn))}>Delete Book</button>
+            <p>
+              {isbn}. "{title}" - author: {author}, {year}
+            </p>
+            <button onClick={() => dispatch(deleteBook(isbn))}>
+              Delete Book
+            </button>
             <EditForm isbn={isbn} />
           </li>
         ))}
