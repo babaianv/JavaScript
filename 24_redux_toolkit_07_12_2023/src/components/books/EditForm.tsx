@@ -1,6 +1,7 @@
 import React, { ChangeEvent, FormEvent, useState } from "react";
 import { useDispatch } from "react-redux";
 import { editTitle } from "../../redux/book/bookSlice";
+import './librarystyle.css'
 
 const EditForm: React.FC<{ isbn: string }> = ({ isbn }): JSX.Element => {
   const [title, setTitle] = useState<string>("");
@@ -8,12 +9,13 @@ const EditForm: React.FC<{ isbn: string }> = ({ isbn }): JSX.Element => {
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    dispatch(editTitle({ isbn: isbn, title: title }));
+    dispatch(editTitle({  isbn, title }));
     setTitle("");
   };
   return (
-    <form onSubmit={handleSubmit}>
-      <input
+    <div className="container_edit">
+      <form onSubmit={handleSubmit}>
+      <input className="input"
         type="text"
         placeholder="title"
         value={title}
@@ -21,8 +23,9 @@ const EditForm: React.FC<{ isbn: string }> = ({ isbn }): JSX.Element => {
           setTitle(e.target.value)
         }
       />
-      <button type="submit">Edit</button>
+      <button className="btn" type="submit">Edit</button>
     </form>
+    </div>
   );
 };
 

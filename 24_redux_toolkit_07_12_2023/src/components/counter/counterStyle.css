@@ -1,0 +1,33 @@
+.counter_container{
+    background-color: rgb(93, 55, 129);
+    margin: 50px 200px 50px 200px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    border: 1px solid black;
+    border-radius: 30px;
+    min-width: 300px;
+}
+
+
+
+.counterBtn button{
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(147, 130, 163);
+    box-shadow: none;
+    margin-left: 15px;
+}
+
+.counterBtn button:hover{
+    transition: linear 0.3s;
+    
+}
+
+.counterBtn button:active{
+    color: rgb(93, 55, 129);  
+}

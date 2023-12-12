@@ -13,14 +13,7 @@ interface BookState {
 }
 
 const initialState: BookState = {
-  books: [
-    {
-      isbn: "1",
-      title: "Harry Potter",
-      author: "J.Rowling",
-      year: "1997",
-    },
-  ],
+  books: []
 };
 
 export const bookSlice = createSlice({

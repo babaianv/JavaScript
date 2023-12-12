@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.css";
 import CounterRTK from "./components/counter/CounterRTK";
 import Sandwich from "./components/sandwich/Sandwich";
 import CreateBook from "../src/components/books/CreateBook";

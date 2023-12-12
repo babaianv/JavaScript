@@ -1,0 +1,42 @@
+.countainer_sandwich{
+    background-color:  rgb(77, 74, 136);
+    margin: 50px 200px 50px 200px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    border: 1px solid black;
+    border-radius: 30px;
+    min-width: 300px;
+}
+
+.sandwich{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(198, 192, 191);
+    font-size: 20px;
+}
+
+.sandwichBtn button {
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(112, 98, 153);
+    box-shadow: none;
+    margin-left: 15px;
+}
+
+.sandwichBtn button:hover{
+    transition: linear 0.3s;
+    
+}
+
+.sandwichBtn button:active{
+    color: rgb(93, 55, 129);  
+}
+
+.ingredients{
+    color: rgb(197, 214, 16); 
+    font-size: 20px;
+}
