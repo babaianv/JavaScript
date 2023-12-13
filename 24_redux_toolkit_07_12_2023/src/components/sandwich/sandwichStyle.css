@@ -1,5 +1,5 @@
 .countainer_sandwich{
-    background-color:  rgb(77, 74, 136);
+    background-color: rgba(144, 106, 180, 50%);
     margin: 50px 200px 50px 200px;
     padding-top: 20px;
     padding-bottom: 50px;
@@ -8,10 +8,15 @@
     min-width: 300px;
 }
 
+.countainer_sandwich:hover{
+    transition: linear 0.3s;
+    background-color: rgba(93, 55, 129, 60%);
+}
+
 .sandwich{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: rgb(198, 192, 191);
-    font-size: 20px;
+    color: rgb(240, 235, 234);
+    font-size: 25px;
 }
 
 .sandwichBtn button {
@@ -29,7 +34,7 @@
 
 .sandwichBtn button:hover{
     transition: linear 0.3s;
-    
+    background-color: rgb(137, 99, 173);
 }
 
 .sandwichBtn button:active{

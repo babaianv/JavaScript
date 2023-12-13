@@ -1,11 +1,16 @@
 .counter_container{
-    background-color: rgb(93, 55, 129);
+    background-color: rgba(144, 106, 180, 50%);
     margin: 50px 200px 50px 200px;
     padding-top: 20px;
     padding-bottom: 50px;
     border: 1px solid black;
     border-radius: 30px;
     min-width: 300px;
+}
+
+.counter_container:hover{
+    transition: linear 0.3s;
+    background-color: rgba(93, 55, 129, 60%);
 }
 
 
@@ -25,7 +30,7 @@
 
 .counterBtn button:hover{
     transition: linear 0.3s;
-    
+    background-color: rgb(137, 99, 173);
 }
 
 .counterBtn button:active{

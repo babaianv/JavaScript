@@ -1,17 +1,36 @@
 import React from "react";
-import CounterRTK from "./components/counter/CounterRTK";
-import Sandwich from "./components/sandwich/Sandwich";
-import CreateBook from "../src/components/books/CreateBook";
-import BooksPage from "../src/components/books/BooksPage";
+import { BrowserRouter,Routes ,Route } from "react-router-dom";
+import Main from "./pages/Home";
+import Counter from "./pages/Counter";
+import SandwichP from "./pages/SandwichP";
+import Library from "./pages/Library";
 
 function App() {
   return (
+
     <>
-      <CounterRTK />
-      <Sandwich />
-      <CreateBook />
-      <BooksPage />
+    
+    <BrowserRouter>
+      <Routes> 
+        <Route path="/" element={<Main />} />
+        <Route path="/counter" element={<Counter />} />
+        <Route path="/sandwich" element={<SandwichP />} />
+        <Route path="/library" element={<Library />} />
+        </Routes>
+      </BrowserRouter>
+
+    
     </>
+
+
+
+
+    // <>
+    //   <CounterRTK />
+    //   <Sandwich />
+    //   <CreateBook />
+    //   <BooksPage />
+    // </>
   );
 }
 
